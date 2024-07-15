@@ -101,13 +101,16 @@ ul {
     position: absolute;
     top:100%;
     left:0;
-    background:rgba(255,255,255,0.8);
+    background:#000;
+    color:#fff;
+    font-size: 1.2rem;
     
     width:fit-content;
     padding:5px;
     border-radius: 2px;
 
     cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.25);
 
     animation: coupon 1.2s linear infinite ;
 }
@@ -135,11 +138,11 @@ ul {
 .wecomecoupon:after {
     content:""; 
     position: absolute; 
-    top: -7px; 
+    top: -6.5px; 
     left:10px; 
     border-left: 5px solid transparent; 
     border-right: 5px solid transparent; 
-    border-bottom: 7px solid rgba(255,255,255,0.8);
+    border-bottom: 7px solid #000;
 
 }
 
@@ -516,7 +519,6 @@ ul {
     &>span {
         font-weight: 100;
     }
-
     @media screen and (max-width: 768px) {
         font-size: 1.2rem;
     }
