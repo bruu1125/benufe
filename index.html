@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="index.css">
+
+    <script>
+        $(document).ready(function() {
+            AOS.init({
+                duration: 1200
+            })
+
+            $('.menubar').click(function() {
+                $('.mobile-gnb').addClass('mobile-gnb-open');
+            })
+            $('.closebtn').click(function() {
+                $('.mobile-gnb').removeClass('mobile-gnb-open');
+            })
+            $('.wecomecoupon').click(function() {
+                $('.wecomecoupon').addClass('wecomecoupon-close');
+            })
+
+            $(window).on('scroll',function(){
+                if($(window).scrollTop()){
+                    $('.headerwrap').addClass('hd-scroll');
+                }else{
+                    $('.headerwrap').removeClass('hd-scroll');
+                }
+            });
+        })
+    </script>
+    <title>BENUFE</title>
+</head>
+<body class="mainwrap">
+
+    <div class="headerwrap">
+        <div class="hd-top">
+            <ul class="hd-top__innermenu">
+                <li class="menu-small"><a href="#">B2B 구매문의</a></li>
+                <li class="menu-small"><a href="#">로그인</a></li>
+                <li class="menu-small">
+                    <a href="#">회원가입</a>
+                    <div class="wecomecoupon">
+                        <p>신규 회원<br>10%쿠폰</p>
+                    </div>
+                </li>
+                <li class="menu-small"><a href="#">고객센터</a></li>
+            </ul>
+            
+        </div>
+        <header class="header-category">
+            <button class="menubar">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+            <h1 class="logo">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="베뉴페 로고">
+                </a>
+            </h1>
+            <nav class="gnb">
+                <ul>
+                    <li class="menu"><a href="#">ABOUT</a></li>
+                    <li class="menu"><a href="#">STORE</a></li>
+                    <li class="menu"><a href="#">PRE-OWNED</a></li>
+                    <li class="menu"><a href="#">MAGAZINE</a></li>
+                    <li class="menu"><a href="#">EVENT</a></li>
+                    <li class="menu"><a href="#">REVIEW</a></li>
+                </ul>
+            </nav>
+
+            <nav class="mobile-gnb">
+                <button class="closebtn">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+                <ul class="hd-top__mobile">
+                    <li class="menu-small"><a href="#">B2B 구매문의</a></li>
+                    <li class="menu-small"><a href="#">로그인</a></li>
+                    <li class="menu-small"><a href="#">회원가입</a></li>
+                    <li class="menu-small"><a href="#">고객센터</a></li>
+                </ul>
+                <ul class="hd-mobile-menu">
+                    <li class="menu"><a href="#">ABOUT</a></li>
+                    <li class="menu"><a href="#">STORE</a></li>
+                    <li class="menu"><a href="#">PRE-OWNED</a></li>
+                    <li class="menu"><a href="#">MAGAZINE</a></li>
+                    <li class="menu"><a href="#">EVENT</a></li>
+                    <li class="menu"><a href="#">REVIEW</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-right">
+                <ul>
+                    <li><a href="#">
+                        <span class="material-symbols-outlined">search</span>
+                    </a></li>
+                    <li><a href="#">
+                        <span class="material-symbols-outlined">shopping_bag</span>
+                    </a></li>
+                    <li><a href="#">
+                        <span class="material-symbols-outlined">favorite</span>
+                    </a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+
+    <div class="container">
+        <main class="main">
+            <section class="main-visual">
+                <article class="main-visual__content">
+                    <p class="main01-subtxt">The Premium Life Style Platform</p>
+                    <img class="main01-logoimg" src="img/logo.svg" alt="">
+                    <ul class="main01-icons">
+                        <li><a href="#"><img src="img/icons/icon_instagram.svg" alt=""></a></li>
+                        <li><a href="#"><img src="img/icons/icon_naver.svg" alt=""></a></li>
+                        <li><a href="#"><img src="img/icons/icon_youtube.svg" alt=""></a></li>
+                        <li><a href="#"><img src="img/icons/icon_kakao.svg" alt=""></a></li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="main-contents-01">
+                <div class="main02-wrap">
+                    <div class="main02-bannerbox" data-aos="fade-up">
+                        <article class="main02-banner cont01">
+                            <a href="#">
+                                <img src="img/banner/july.png" alt="">
+                                <h3>7월 신상품</h3>
+                            </a>
+                        </article>
+                        <article class="main02-banner cont02" >
+                            <a href="#">
+                                <img src="img/banner/interior.png" alt="">
+                                <h3>인테리어 큐레이팅</h3>
+                            </a>
+                        </article>
+                        <article class="main02-banner cont03">
+                            <a href="#">
+                                <img src="img/banner/objectb.png" alt="">
+                                <h3>OBJECT B</h3>
+                            </a>
+                        </article>
+                        <article class="main02-banner cont04">
+                            <a href="#">
+                                <img src="img/banner/event.png" alt="">
+                                <h3>이벤트 & 기획전</h3>
+                            </a>
+                        </article>
+                        <article class="main02-banner cont05">
+                            <a href="#">
+                                <img src="img/banner/review.png" alt="">
+                                <h3>베뉴페 고객 리얼리뷰</h3>
+                            </a>
+                        </article>
+                        <article class="main02-banner cont06">
+                            <a href="#">
+                                <img src="img/banner/chair.png" alt="">
+                                <h3>에디터픽</h3>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="main03-wrap"data-aos="fade-up">
+                    <h2>RISING BRANDS</h2>
+                    <div class="main03-contentsbox" >
+                        <article class="main03-content__brand">
+                            <img src="img/brands/lls.png" alt="">
+                            <div class="brand-innerbox">
+                                <p>LIVE YOUR <span>LIFE LESS SERIOUS</span></p>
+                                <h3>엘엘에스 <span>LLS</span></h3>
+                                <a href="#" class="btn-component01">SHOP</a>
+                            </div>
+                            <div class="label-new">NEW BRAND</div>
+                        </article>
+                        <article class="main03-content__brand">
+                            <img src="img/brands/dante.png" alt="">
+                            <div class="brand-innerbox">
+                                <p>빛과 그림자의 리드미컬한 조화</p>
+                                <h3>단테 <span>DANTE</span></h3>
+                                <a href="#" class="btn-component01">SHOP</a>
+                            </div>
+                        </article>
+                        <article class="main03-content__brand">
+                            <img src="img/brands/tacchini.png" alt="">
+                            <div class="brand-innerbox">
+                                <p>하이엔드 공간의 정석</p>
+                                <h3>타키니<span>TACCHINI</span></h3>
+                                <a href="#" class="btn-component01">SHOP</a>
+                            </div>
+                        </article>
+                        <article class="main03-content__brand">
+                            <img src="img/brands/andtradition.png" alt="">
+                            <div class="brand-innerbox">
+                                <p>과거와 미래의 연결점</p>
+                                <h3>앤트레디션 <span>&TRADITION</span></h3>
+                                <a href="#" class="btn-component01">SHOP</a>
+                            </div>
+                        </article>
+                        <article class="main03-content__brand">
+                            <img src="img/brands/gatn.png" alt="">
+                            <div class="brand-innerbox">
+                                <p>신혼 라이프스타일 큐레이션</p>
+                                <h3>가튼 <span>GATN</span></h3>
+                                <a href="#" class="btn-component01">SHOP</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main-contents-02">
+                <div class="benufe-info-etcwrap" data-aos="fade-up">
+                    <div class="info-contents__menu">
+                        <ul>
+                            <li class="menu active"><a href="#">MAGAZINE</a></li>
+                            <li class="menu"><a href="#">YOUTUBE</a></li>
+                            <li class="menu"><a href="#">INSTAGRAM</a></li>
+                            <li class="menu"><a href="#">BLOG</a></li>
+                        </ul>
+                    </div>
+                    <div class="info-contents-view">
+                        <div class="contents-view__inner">
+                            <article>
+                                <a href="#">
+                                    <img src="img/magazine/july.png" alt="">
+                                    <h3>여름에도 포근하고 시원하게</h3>
+                                </a>
+                            </article>
+                            <article>
+                                <a href="#">
+                                    <img src="img/magazine/june.png" alt="">
+                                    <h3>컬러 포인트로 완성되는 인테리어</h3>
+                                </a>
+                            </article>
+                            <article>
+                                <a href="#">
+                                    <img src="img/magazine/may.png" alt="">
+                                    <h3>가정의 달 선물 고민이라면</h3>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="benufe-info-banners">
+                    <img src="img/eventbanner.png" alt="">
+                    <div class="bannertxtbox">
+                        <p>맛있는 시간의 시작!</p>
+                        <h4>키친테리어 기획전</h4>
+                        <a href="#" class="btn-component02">VIEW</a>
+                    </div>
+                </div>
+            </section>
+
+        <section class="main-contents-03">
+            <div class="products-wrap" data-aos="fade-up">
+                <div class="products-titlewrap">
+                    <h2>WEEKLY BEST</h2>
+                    <p>베뉴페의 인기 상품들을 만나보세요!</p>
+                </div>
+
+                <div class="products-area" >
+                    <article class="product-component">
+                        <div class="thumbnail">
+                            <img src="https://lyj0901.cafe24.com/web/product/medium/202302/e90e62d52c41a66c7dc880fcfacaa412.jpg" alt="">
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info__brand">BRIO</p>
+                            <p class="product-info__name">브리오 기차놀이 레일웨이 + 클래식 플레이 테이블 세트</p>
+                            <p class="product-info__price">990,000원</p>
+                        </div>
+                    </article>
+                    <article class="product-component">
+                        <div class="thumbnail">
+                            <img src="https://lyj0901.cafe24.com/web/product/medium/202206/f0e4a96e2c17d8d5cc58a189bc3b6049.jpg" alt="">
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info__brand">RICHARD LAMPERT</p>
+                            <p class="product-info__name">리차드 램퍼트 아이어만 테이블 160cm 화이트</p>
+                            <p class="product-info__price">1,700,000원</p>
+                        </div>
+                    </article>
+                    <article class="product-component">
+                        <div class="thumbnail">
+                            <img src="https://lyj0901.cafe24.com/web/product/medium/202206/960814e52c45cb2075362af91e9223ee.jpg" alt="">
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info__brand">WildeSpieth</p>
+                            <p class="product-info__name">와일드 스피어스 SE68 의자, 블랙 / 크롬</p>
+                            <p class="product-info__price">710,000원</p>
+                        </div>
+                    </article>
+                    <article class="product-component">
+                        <div class="thumbnail">
+                            <img src="https://lyj0901.cafe24.com/web/product/medium/202307/7e75b2710e7c641b9b5c8c8c09340b83.jpg" alt="">
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info__brand">louis poulsen</p>
+                            <p class="product-info__name">루이스폴센 판텔라 포터블 160 램프 V2</p>
+                            <p class="product-info__price">570,000원</p>
+                        </div>
+                    </article>
+                    <article class="product-component">
+                        <div class="thumbnail">
+                            <img src="https://lyj0901.cafe24.com/web/product/medium/202211/0e0e4b1f0c8859f33f8751f91b553825.jpg" alt="">
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info__brand">WENDELBO</p>
+                            <p class="product-info__name">웬델보 엣지소파 V1 모듈17 페트롤</p>
+                            <p class="product-info__price">7,126,000원</p>
+                        </div>
+                    </article>
+                    <article class="product-component">
+                        <div class="thumbnail">
+                            <img src="https://lyj0901.cafe24.com/web/product/medium/202310/2102f2afadd6e419d0159965761a57e2.jpg" alt="">
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info__brand">louis poulsen</p>
+                            <p class="product-info__name">[ICONS] 루이스폴센 판텔라 플로어 램프</p>
+                            <p class="product-info__price">1,870,000원</p>
+                        </div>
+                    </article>
+                    <article class="product-component">
+                        <div class="thumbnail">
+                            <img src="https://lyj0901.cafe24.com/web/product/medium/20200610/677cd5e009cdea4fcd50ade067a2c1f6.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info__brand">RICHARD LAMPERTO</p>
+                            <p class="product-info__name">리차드 램퍼트 아이어만 테이블 200cm 화이트</p>
+                            <p class="product-info__price">1,800,000원</p>
+                        </div>
+                    </article>
+                    <article class="product-component">
+                        <div class="thumbnail">
+                            <img src="https://lyj0901.cafe24.com/web/product/medium/202401/6a64db94ed9342d4d7cb2ee050c6aeca.jpg" alt="">
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info__brand">WENDELBO</p>
+                            <p class="product-info__name">웬델보 trace 트레이스 가죽 소파</p>
+                            <p class="product-info__price">2,987,000원</p>
+                        </div>
+                    </article>
+                </div>
+
+                <button class="products-viewmore">VIEW MORE</button>
+            </div>
+        </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-wrap">
+                <div class="help">
+                    <div class="center01">
+                        <h2>베뉴페 고객센터</h2>
+                        <h3><a href="tel:07088453553">070-8845-3553</a></h3>
+                        <p>평일 09:00~18:00 (주말, 공휴일 휴무)</p>
+                    </div>
+                    <div class="center02">
+                        <h2>베뉴페 본사 쇼룸</h2>
+                        <h3><a href="tel:07086520062">070-8652-0062</a></h3>
+                        <p>월~일 09:00~18:00</p>
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="#">베뉴페소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">쇼룸안내</a></li>
+                </ul>
+
+                <div class="footer-info">
+                    <p>
+                        상호명 : (주) 에이치에스코퍼레이션 | 대표이사 : 유문진 | 주소 : 10881 경기도 파주시 회동길 357 (서패동) 1층 2층 <br>
+                        사업자등록번호 : 564-87-01902 | 통신판매업신고 : 제2021-경기파주-1435호 | 개인정보보호책임자 : 유문진 <br>
+                        이메일 : <a href="mailto:benufe.info@gmail.com">benufe.info@gmail.com</a> | 입점문의 : <a href="mailto:contact@benufe.com">contact@benufe.com</a>
+                    </p>
+                </div>
+
+                <p class="copy">Copyrightⓒ2022 BENUFE. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
